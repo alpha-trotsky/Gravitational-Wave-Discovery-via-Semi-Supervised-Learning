@@ -1,2 +1,2 @@
 # Gravitational-Wave-Discovery-via-Semi-Supervised-Learning
-This repository hosts the code and report for the final project for APS360(UofT). I apply a physically inspired deepn network to synthetically generated gravitational wave signals by encoding energy conservation into the Hamiltonian loss function. The H-AE approach is compared to the industry standard match filtering and a blackbox DeepL approach.
+This repository hosts the code and report for the final project for APS360 (UofT). I apply a physically inspired deepn network to synthetically generated gravitational wave signals by encoding energy conservation into the Hamiltonian loss function. The H-AE approach is compared to the industry standard match filtering and a blackbox DeepL approach.
