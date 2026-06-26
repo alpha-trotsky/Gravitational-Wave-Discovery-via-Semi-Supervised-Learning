@@ -1,0 +1,21 @@
+{
+  "hae": {
+    "latent_dim": 2,
+    "lr": 0.001,
+    "lambda_phys": 0.01
+  },
+  "cae": {
+    "latent_dim": 2,
+    "lr": 0.001
+  },
+  "properhae": {
+    "latent_dim": 4,
+    "lr": 0.001,
+    "lambda_phys": 0.01
+  },
+  "porthae": {
+    "latent_dim": 2,
+    "lr": 0.001,
+    "lambda_phys": 0.01
+  }
+}

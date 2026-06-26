@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(mkdir -p /c/Users/Belia/OneDrive/Documents/GitHub/Gravitational-Wave-Discovery-via-Semi-Supervised-Learning/src)",
+      "Bash(mkdir -p /c/Users/Belia/OneDrive/Documents/GitHub/Gravitational-Wave-Discovery-via-Semi-Supervised-Learning/checkpoints)",
+      "Bash(mkdir -p /c/Users/Belia/OneDrive/Documents/GitHub/Gravitational-Wave-Discovery-via-Semi-Supervised-Learning/plots)",
+      "Bash(mkdir -p /c/Users/Belia/OneDrive/Documents/GitHub/Gravitational-Wave-Discovery-via-Semi-Supervised-Learning/results)",
+      "Bash(head -100 APS_code/*.py)"
+    ]
+  }
+}

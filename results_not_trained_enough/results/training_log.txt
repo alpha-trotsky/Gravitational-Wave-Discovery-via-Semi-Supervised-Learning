@@ -1,0 +1,173 @@
+
+============================================================
+Training: hae  |  lr=0.001  |  lambda_phys=0.01
+============================================================
+  Epoch    1/200 | tr_recon=0.110075 | vl_recon=0.007659 | phys=0.000224 | best_val=0.007659 | t=1s
+  Epoch   10/200 | tr_recon=0.001256 | vl_recon=0.000850 | phys=0.000001 | best_val=0.000653 | t=5s
+  Epoch   20/200 | tr_recon=0.000886 | vl_recon=0.000397 | phys=0.000002 | best_val=0.000247 | t=10s
+  Epoch   30/200 | tr_recon=0.000651 | vl_recon=0.000470 | phys=0.000002 | best_val=0.000200 | t=15s
+  Epoch   40/200 | tr_recon=0.000433 | vl_recon=0.000165 | phys=0.000001 | best_val=0.000158 | t=20s
+  Epoch   50/200 | tr_recon=0.000439 | vl_recon=0.000166 | phys=0.000000 | best_val=0.000144 | t=25s
+  Epoch   60/200 | tr_recon=0.000356 | vl_recon=0.000192 | phys=0.000002 | best_val=0.000144 | t=31s
+  Early stopping at epoch 64 (patience=20).
+Done. Best val MSE = 0.000144 | Total time: 32.6s
+Checkpoint saved to: ./checkpoints/hae_best.pt
+
+============================================================
+Training: cae  |  lr=0.001  |  lambda_phys=0.0
+============================================================
+  Epoch    1/200 | tr_recon=0.114700 | vl_recon=0.007257 | phys=0.000000 | best_val=0.007257 | t=0s
+  Epoch   10/200 | tr_recon=0.001288 | vl_recon=0.000336 | phys=0.000000 | best_val=0.000336 | t=4s
+  Epoch   20/200 | tr_recon=0.000689 | vl_recon=0.000227 | phys=0.000000 | best_val=0.000227 | t=9s
+  Epoch   30/200 | tr_recon=0.000846 | vl_recon=0.000269 | phys=0.000000 | best_val=0.000141 | t=13s
+  Epoch   40/200 | tr_recon=0.000654 | vl_recon=0.000969 | phys=0.000000 | best_val=0.000141 | t=17s
+  Epoch   50/200 | tr_recon=0.000341 | vl_recon=0.000250 | phys=0.000000 | best_val=0.000141 | t=22s
+  Epoch   60/200 | tr_recon=0.000629 | vl_recon=0.000416 | phys=0.000000 | best_val=0.000139 | t=26s
+  Epoch   70/200 | tr_recon=0.000574 | vl_recon=0.000431 | phys=0.000000 | best_val=0.000139 | t=30s
+  Epoch   80/200 | tr_recon=0.000328 | vl_recon=0.000349 | phys=0.000000 | best_val=0.000115 | t=35s
+  Epoch   90/200 | tr_recon=0.000356 | vl_recon=0.000108 | phys=0.000000 | best_val=0.000088 | t=39s
+  Epoch  100/200 | tr_recon=0.000313 | vl_recon=0.000166 | phys=0.000000 | best_val=0.000073 | t=43s
+  Epoch  110/200 | tr_recon=0.000325 | vl_recon=0.000078 | phys=0.000000 | best_val=0.000065 | t=48s
+  Epoch  120/200 | tr_recon=0.000413 | vl_recon=0.000093 | phys=0.000000 | best_val=0.000043 | t=52s
+  Epoch  130/200 | tr_recon=0.000100 | vl_recon=0.000041 | phys=0.000000 | best_val=0.000039 | t=56s
+  Epoch  140/200 | tr_recon=0.000145 | vl_recon=0.000050 | phys=0.000000 | best_val=0.000030 | t=61s
+  Epoch  150/200 | tr_recon=0.000432 | vl_recon=0.000505 | phys=0.000000 | best_val=0.000030 | t=65s
+  Epoch  160/200 | tr_recon=0.000143 | vl_recon=0.000754 | phys=0.000000 | best_val=0.000025 | t=69s
+  Epoch  170/200 | tr_recon=0.000194 | vl_recon=0.000507 | phys=0.000000 | best_val=0.000025 | t=74s
+  Early stopping at epoch 174 (patience=20).
+Done. Best val MSE = 0.000025 | Total time: 75.3s
+Checkpoint saved to: ./checkpoints/cae_best.pt
+
+============================================================
+Training: properhae  |  lr=0.001  |  lambda_phys=0.01
+============================================================
+  Epoch    1/200 | tr_recon=0.132128 | vl_recon=0.010272 | phys=0.172079 | best_val=0.010272 | t=1s
+  Epoch   10/200 | tr_recon=0.001333 | vl_recon=0.000509 | phys=0.009957 | best_val=0.000509 | t=7s
+  Epoch   20/200 | tr_recon=0.000796 | vl_recon=0.000284 | phys=0.006203 | best_val=0.000245 | t=13s
+  Epoch   30/200 | tr_recon=0.000435 | vl_recon=0.000223 | phys=0.003618 | best_val=0.000201 | t=20s
+  Epoch   40/200 | tr_recon=0.001083 | vl_recon=0.004899 | phys=0.002750 | best_val=0.000157 | t=26s
+  Epoch   50/200 | tr_recon=0.000355 | vl_recon=0.000221 | phys=0.002411 | best_val=0.000123 | t=33s
+  Epoch   60/200 | tr_recon=0.000282 | vl_recon=0.000131 | phys=0.001950 | best_val=0.000123 | t=39s
+  Early stopping at epoch 62 (patience=20).
+Done. Best val MSE = 0.000123 | Total time: 40.4s
+Checkpoint saved to: ./checkpoints/properhae_best.pt
+
+============================================================
+Training: porthae  |  lr=0.001  |  lambda_phys=0.01
+============================================================
+  Epoch    1/200 | tr_recon=0.109531 | vl_recon=0.007006 | phys=0.183165 | best_val=0.007006 | t=1s
+  Epoch   10/200 | tr_recon=0.001539 | vl_recon=0.000891 | phys=0.013146 | best_val=0.000678 | t=7s
+  Epoch   20/200 | tr_recon=0.000950 | vl_recon=0.000481 | phys=0.008459 | best_val=0.000309 | t=13s
+  Epoch   30/200 | tr_recon=0.000591 | vl_recon=0.000417 | phys=0.006905 | best_val=0.000228 | t=20s
+  Epoch   40/200 | tr_recon=0.000545 | vl_recon=0.000624 | phys=0.005624 | best_val=0.000184 | t=27s
+  Epoch   50/200 | tr_recon=0.000534 | vl_recon=0.000287 | phys=0.004885 | best_val=0.000184 | t=33s
+  Early stopping at epoch 52 (patience=20).
+Done. Best val MSE = 0.000184 | Total time: 34.8s
+Checkpoint saved to: ./checkpoints/porthae_best.pt
+
+============================================================
+Training: hae_lambda0.01  |  lr=0.001  |  lambda_phys=0.01
+============================================================
+  Epoch    1/200 | tr_recon=0.110075 | vl_recon=0.007659 | phys=0.000224 | best_val=0.007659 | t=1s
+  Epoch   10/200 | tr_recon=0.001256 | vl_recon=0.000850 | phys=0.000001 | best_val=0.000653 | t=5s
+  Epoch   20/200 | tr_recon=0.000886 | vl_recon=0.000397 | phys=0.000002 | best_val=0.000247 | t=10s
+  Epoch   30/200 | tr_recon=0.000651 | vl_recon=0.000470 | phys=0.000002 | best_val=0.000200 | t=15s
+  Epoch   40/200 | tr_recon=0.000433 | vl_recon=0.000165 | phys=0.000001 | best_val=0.000158 | t=20s
+  Epoch   50/200 | tr_recon=0.000439 | vl_recon=0.000166 | phys=0.000000 | best_val=0.000144 | t=26s
+  Epoch   60/200 | tr_recon=0.000356 | vl_recon=0.000192 | phys=0.000002 | best_val=0.000144 | t=31s
+  Early stopping at epoch 64 (patience=20).
+Done. Best val MSE = 0.000144 | Total time: 32.9s
+Checkpoint saved to: ./checkpoints/hae_lambda0.01_best.pt
+
+============================================================
+Training: properhae_lambda0.1  |  lr=0.001  |  lambda_phys=0.1
+============================================================
+  Epoch    1/200 | tr_recon=0.132281 | vl_recon=0.015297 | phys=0.067346 | best_val=0.015297 | t=1s
+  Epoch   10/200 | tr_recon=0.001425 | vl_recon=0.000647 | phys=0.001602 | best_val=0.000358 | t=7s
+  Epoch   20/200 | tr_recon=0.001105 | vl_recon=0.000391 | phys=0.001013 | best_val=0.000239 | t=14s
+  Epoch   30/200 | tr_recon=0.000540 | vl_recon=0.000430 | phys=0.000664 | best_val=0.000201 | t=20s
+  Epoch   40/200 | tr_recon=0.000468 | vl_recon=0.000801 | phys=0.000446 | best_val=0.000168 | t=27s
+  Epoch   50/200 | tr_recon=0.000806 | vl_recon=0.000329 | phys=0.000512 | best_val=0.000168 | t=34s
+  Early stopping at epoch 57 (patience=20).
+Done. Best val MSE = 0.000168 | Total time: 38.4s
+Checkpoint saved to: ./checkpoints/properhae_lambda0.1_best.pt
+
+============================================================
+Training: properhae_lambda0.5  |  lr=0.001  |  lambda_phys=0.5
+============================================================
+  Epoch    1/200 | tr_recon=0.140459 | vl_recon=0.011749 | phys=0.029875 | best_val=0.011749 | t=1s
+  Epoch   10/200 | tr_recon=0.001789 | vl_recon=0.000622 | phys=0.000549 | best_val=0.000622 | t=7s
+  Epoch   20/200 | tr_recon=0.001383 | vl_recon=0.000440 | phys=0.000337 | best_val=0.000372 | t=13s
+  Epoch   30/200 | tr_recon=0.000912 | vl_recon=0.000547 | phys=0.000221 | best_val=0.000227 | t=20s
+  Epoch   40/200 | tr_recon=0.000474 | vl_recon=0.000284 | phys=0.000228 | best_val=0.000227 | t=26s
+  Epoch   50/200 | tr_recon=0.000891 | vl_recon=0.000214 | phys=0.000250 | best_val=0.000175 | t=33s
+  Epoch   60/200 | tr_recon=0.000411 | vl_recon=0.000165 | phys=0.000115 | best_val=0.000126 | t=40s
+  Epoch   70/200 | tr_recon=0.000545 | vl_recon=0.000183 | phys=0.000230 | best_val=0.000126 | t=46s
+  Epoch   80/200 | tr_recon=0.000385 | vl_recon=0.000423 | phys=0.000129 | best_val=0.000123 | t=53s
+  Epoch   90/200 | tr_recon=0.000605 | vl_recon=0.000281 | phys=0.000141 | best_val=0.000121 | t=59s
+  Epoch  100/200 | tr_recon=0.000292 | vl_recon=0.000176 | phys=0.000143 | best_val=0.000070 | t=66s
+  Epoch  110/200 | tr_recon=0.000194 | vl_recon=0.000169 | phys=0.000087 | best_val=0.000070 | t=73s
+  Early stopping at epoch 114 (patience=20).
+Done. Best val MSE = 0.000070 | Total time: 75.3s
+Checkpoint saved to: ./checkpoints/properhae_lambda0.5_best.pt
+
+============================================================
+Training: properhae_lambda1.0  |  lr=0.001  |  lambda_phys=1.0
+============================================================
+  Epoch    1/200 | tr_recon=0.148952 | vl_recon=0.017938 | phys=0.020545 | best_val=0.017938 | t=1s
+  Epoch   10/200 | tr_recon=0.001769 | vl_recon=0.000622 | phys=0.000335 | best_val=0.000547 | t=7s
+  Epoch   20/200 | tr_recon=0.001407 | vl_recon=0.000418 | phys=0.000208 | best_val=0.000385 | t=13s
+  Epoch   30/200 | tr_recon=0.001031 | vl_recon=0.000516 | phys=0.000170 | best_val=0.000205 | t=20s
+  Epoch   40/200 | tr_recon=0.000471 | vl_recon=0.000342 | phys=0.000136 | best_val=0.000205 | t=26s
+  Epoch   50/200 | tr_recon=0.001663 | vl_recon=0.000178 | phys=0.000270 | best_val=0.000178 | t=33s
+  Epoch   60/200 | tr_recon=0.000499 | vl_recon=0.000183 | phys=0.000082 | best_val=0.000177 | t=40s
+  Epoch   70/200 | tr_recon=0.000934 | vl_recon=0.000350 | phys=0.000184 | best_val=0.000174 | t=46s
+  Epoch   80/200 | tr_recon=0.000386 | vl_recon=0.000903 | phys=0.000094 | best_val=0.000115 | t=53s
+  Epoch   90/200 | tr_recon=0.000523 | vl_recon=0.000525 | phys=0.000070 | best_val=0.000106 | t=59s
+  Epoch  100/200 | tr_recon=0.000320 | vl_recon=0.000166 | phys=0.000062 | best_val=0.000078 | t=66s
+  Epoch  110/200 | tr_recon=0.000231 | vl_recon=0.000169 | phys=0.000067 | best_val=0.000078 | t=73s
+  Early stopping at epoch 114 (patience=20).
+Done. Best val MSE = 0.000078 | Total time: 75.2s
+Checkpoint saved to: ./checkpoints/properhae_lambda1.0_best.pt
+
+============================================================
+Training: porthae_lambda0.1  |  lr=0.001  |  lambda_phys=0.1
+============================================================
+  Epoch    1/200 | tr_recon=0.132279 | vl_recon=0.015133 | phys=0.067262 | best_val=0.015133 | t=1s
+  Epoch   10/200 | tr_recon=0.001512 | vl_recon=0.000710 | phys=0.001719 | best_val=0.000332 | t=7s
+  Epoch   20/200 | tr_recon=0.001158 | vl_recon=0.000348 | phys=0.001088 | best_val=0.000272 | t=14s
+  Epoch   30/200 | tr_recon=0.000525 | vl_recon=0.000379 | phys=0.000688 | best_val=0.000189 | t=20s
+  Epoch   40/200 | tr_recon=0.000486 | vl_recon=0.000666 | phys=0.000468 | best_val=0.000189 | t=27s
+  Early stopping at epoch 48 (patience=20).
+Done. Best val MSE = 0.000189 | Total time: 32.4s
+Checkpoint saved to: ./checkpoints/porthae_lambda0.1_best.pt
+
+============================================================
+Training: porthae_lambda0.5  |  lr=0.001  |  lambda_phys=0.5
+============================================================
+  Epoch    1/200 | tr_recon=0.140450 | vl_recon=0.011467 | phys=0.029862 | best_val=0.011467 | t=1s
+  Epoch   10/200 | tr_recon=0.001725 | vl_recon=0.000578 | phys=0.000554 | best_val=0.000523 | t=7s
+  Epoch   20/200 | tr_recon=0.001403 | vl_recon=0.000398 | phys=0.000347 | best_val=0.000313 | t=14s
+  Epoch   30/200 | tr_recon=0.000734 | vl_recon=0.000228 | phys=0.000226 | best_val=0.000228 | t=21s
+  Epoch   40/200 | tr_recon=0.000534 | vl_recon=0.000307 | phys=0.000161 | best_val=0.000228 | t=27s
+  Epoch   50/200 | tr_recon=0.001206 | vl_recon=0.000228 | phys=0.000442 | best_val=0.000182 | t=34s
+  Epoch   60/200 | tr_recon=0.000347 | vl_recon=0.000142 | phys=0.000119 | best_val=0.000132 | t=41s
+  Epoch   70/200 | tr_recon=0.000825 | vl_recon=0.000296 | phys=0.000199 | best_val=0.000132 | t=48s
+  Early stopping at epoch 77 (patience=20).
+Done. Best val MSE = 0.000132 | Total time: 52.4s
+Checkpoint saved to: ./checkpoints/porthae_lambda0.5_best.pt
+
+============================================================
+Training: porthae_lambda1.0  |  lr=0.001  |  lambda_phys=1.0
+============================================================
+  Epoch    1/200 | tr_recon=0.148951 | vl_recon=0.017922 | phys=0.020540 | best_val=0.017922 | t=1s
+  Epoch   10/200 | tr_recon=0.001727 | vl_recon=0.000642 | phys=0.000335 | best_val=0.000502 | t=7s
+  Epoch   20/200 | tr_recon=0.001480 | vl_recon=0.000472 | phys=0.000222 | best_val=0.000348 | t=13s
+  Epoch   30/200 | tr_recon=0.001065 | vl_recon=0.000857 | phys=0.000158 | best_val=0.000288 | t=20s
+  Epoch   40/200 | tr_recon=0.000569 | vl_recon=0.000390 | phys=0.000113 | best_val=0.000217 | t=27s
+  Epoch   50/200 | tr_recon=0.001561 | vl_recon=0.000306 | phys=0.000259 | best_val=0.000147 | t=34s
+  Epoch   60/200 | tr_recon=0.000357 | vl_recon=0.000163 | phys=0.000070 | best_val=0.000138 | t=41s
+  Epoch   70/200 | tr_recon=0.000948 | vl_recon=0.000273 | phys=0.000179 | best_val=0.000138 | t=48s
+  Early stopping at epoch 77 (patience=20).
+Done. Best val MSE = 0.000138 | Total time: 52.3s
+Checkpoint saved to: ./checkpoints/porthae_lambda1.0_best.pt
