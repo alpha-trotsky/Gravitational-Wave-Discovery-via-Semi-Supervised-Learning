@@ -24,10 +24,11 @@ import matplotlib.ticker as ticker
 import torch
 
 from core.data         import make_splits
+from core.models       import HAE, BaselineCAE, ProperHAE, PortHAE
 from evaluation.utils  import load_model, collect_outputs, mse as _mse, overlap as _overlap, compute_pc1_ratio
 from evaluation.config import (
     HDF_PATH, CHECKPOINT_DIR, PLOTS_DIR, RESULTS_DIR,
-    BATCH_SIZE, LAMBDA_VALUES, ckpt_path, build_model_registry,
+    BATCH_SIZE, LAMBDA_VALUES, ckpt_path,
 )
 
 
@@ -41,7 +42,6 @@ FAMILY_SPECS = {
 def _sweep_family(family_key, display_name, loaders, device,
                   checkpoint_dir, results_dir, lambda_values):
     """Collect metrics for one model family across all lambdas."""
-    from core.models import HAE, ProperHAE, PortHAE
     cls_map = {"hae": HAE, "properhae": ProperHAE, "porthae": PortHAE}
     cls = cls_map[family_key]
 
@@ -136,7 +136,6 @@ def main():
     loaders, _ = make_splits(args.hdf, batch_size=args.batch_size)
 
     # Load CAE reference metrics
-    from core.models import BaselineCAE
     cae_path = ckpt_path("cae", checkpoint_dir=args.checkpoint_dir)
     cae_ld   = 2
     cfg_file = os.path.join(args.results_dir, "best_configs.json")

@@ -51,7 +51,9 @@ class ParamMLP(nn.Module):
 
 def _load_labels(hdf_path, indices):
     with h5py.File(hdf_path, "r") as f:
-        cols = [f[f"injection_parameters/{k}"][indices].astype(np.float32)
+        # Read full columns then index in numpy: h5py fancy indexing requires
+        # sorted indices, but val_idx is a random pick and must keep loader order.
+        cols = [f[f"injection_parameters/{k}"][:][indices].astype(np.float32)
                 for k in PARAM_KEYS]
     return torch.from_numpy(np.stack(cols, axis=1))
 

@@ -34,7 +34,7 @@ def load_registry(registry, device):
         if m is not None:
             models[name] = m
         else:
-            print(f"  [skip] {name} — checkpoint not found: {path}")
+            print(f"  [skip] {name} - checkpoint not found: {path}")
     return models
 
 
