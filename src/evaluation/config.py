@@ -5,8 +5,12 @@ Each eval script imports this and calls load_all_models() to get whatever
 checkpoints are present, skipping any that are missing.
 """
 
-import os
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import json
+
+from core.models import HAE, BaselineCAE, ProperHAE, PortHAE
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 HDF_PATH       = "./output/dataset.hdf"
@@ -47,8 +51,6 @@ def build_model_registry(checkpoint_dir=CHECKPOINT_DIR,
 
     Latent dims are read from best_configs.json; fall back to 2.
     """
-    from core.models import HAE, BaselineCAE, ProperHAE, PortHAE
-
     cfg_path = os.path.join(results_dir, "best_configs.json")
     cfgs = {}
     if os.path.exists(cfg_path):
